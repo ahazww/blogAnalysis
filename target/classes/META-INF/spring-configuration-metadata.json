@@ -1,0 +1,43 @@
+{
+  "groups": [
+    {
+      "name": "httpportcfg",
+      "type": "springboot.config.HttpPortCfg",
+      "sourceType": "springboot.config.HttpPortCfg"
+    },
+    {
+      "name": "nettyserver",
+      "type": "springboot.config.NettyServerConfig",
+      "sourceType": "springboot.config.NettyServerConfig"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "springboot.StartApplication",
+      "sourceMethod": "dataSource()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "httpportcfg.http-port",
+      "type": "java.lang.String",
+      "sourceType": "springboot.config.HttpPortCfg"
+    },
+    {
+      "name": "httpportcfg.https-port",
+      "type": "java.lang.String",
+      "sourceType": "springboot.config.HttpPortCfg"
+    },
+    {
+      "name": "nettyserver.service-ip",
+      "type": "java.lang.String",
+      "sourceType": "springboot.config.NettyServerConfig"
+    },
+    {
+      "name": "nettyserver.service-port",
+      "type": "java.lang.String",
+      "sourceType": "springboot.config.NettyServerConfig"
+    }
+  ],
+  "hints": []
+}

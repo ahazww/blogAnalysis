@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: springboot.service.impl.RedisServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.102 s <<< FAILURE! - in springboot.service.impl.RedisServiceTest
+test(springboot.service.impl.RedisServiceTest)  Time elapsed: 2.098 s  <<< ERROR!
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/themes/ahazww/index.html]")
+	at springboot.service.impl.RedisServiceTest.test(RedisServiceTest.java:60)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "keywords ?: commons.site_option('site_keywords')" (template: "themes/ahazww/header" - line 10, col 27)
+	at springboot.service.impl.RedisServiceTest.test(RedisServiceTest.java:60)
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "keywords ?: commons.site_option('site_keywords')" (template: "themes/ahazww/header" - line 10, col 27)
+	at springboot.service.impl.RedisServiceTest.test(RedisServiceTest.java:60)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method site_option(java.lang.String) on null context object
+	at springboot.service.impl.RedisServiceTest.test(RedisServiceTest.java:60)
+
