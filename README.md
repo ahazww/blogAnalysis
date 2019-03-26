@@ -1,3 +1,14 @@
+感谢Jantent的贡献，项目是来源于 https://github.com/JayTange/Jantent 
+修改了部分页面及jar包冲突问题
+添加了mybaits逆向工程及使用dom4j根据xml生成sql小工具
+服务器使用腾讯云，nginx反向代理，直接部署，启动脚本小工具来源于JayTange
+
+数据分析模块还未整合，需要一段时间
+目前准备仍然部署在腾讯云，使用flume采集+hdfs存储+ETL(MR)+HBASE+HIVE/MR分析，最终存储在mysql方便展示
+展示模块选型仍然使用Thymeleaf+Echarts，实现细节需要时间
+数据分析需求暂定为用户行为及地域信息分析，计划分析七个模块，看时间，预估用户分析模块需要一个月
+
+以下是Janti的原版展示
 # Jantent
 用spring boot开发的web博客系统
 # 概述
